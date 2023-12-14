@@ -23,9 +23,7 @@ COPY . .
 # ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN yarn build
-RUN cd app
-RUN ls
-RUN pwd
+
 
 # If using npm comment out above and use below instead
 # RUN npm run build

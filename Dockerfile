@@ -24,6 +24,8 @@ COPY . .
 RUN ls
 RUN pwd
 RUN yarn build
+RUN ls
+RUN pwd
 
 # If using npm comment out above and use below instead
 # RUN npm run build

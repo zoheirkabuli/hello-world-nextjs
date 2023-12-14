@@ -21,7 +21,7 @@ COPY . .
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the build.
 # ENV NEXT_TELEMETRY_DISABLED 1
-
+RUN ls
 RUN yarn build
 
 # If using npm comment out above and use below instead
@@ -38,7 +38,6 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-RUN ls
 COPY --from=builder /app/public ./public
 
 # Set the correct permission for prerender cache

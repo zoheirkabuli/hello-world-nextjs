@@ -7,3 +7,9 @@
   min-height: 100vh;
   min-height: 100dvh;
 }
+
+.main h1 {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 700;
+}

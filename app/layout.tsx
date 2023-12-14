@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "normalize.css";
 import "./globals.css";
 
-const roboto = Roboto({
-  weight: ["400", "700", "900"],
+const roboto = Roboto_Mono({
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
   preload: true,

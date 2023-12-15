@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Roboto_Mono } from "next/font/google";
 import "normalize.css";
 import "./globals.css";
@@ -22,6 +23,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={roboto.className}>{children}</body>
     </html>
   );
